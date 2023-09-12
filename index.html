@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <title>Golden Fable</title>
-<meta name="author" content="tansh">
-<meta name="description" content="HTML Landing Page Teamplate">
+<meta name="author" content="Hossain Nahdi">
+<meta name="description" content="HTML Landing Page Template">
 <meta name="keywords" content="digital marketing, leads, pay per click, advertising, social media, SEO, email marketing">
 
 <!-- FAVICON FILES -->
@@ -22,6 +22,21 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="stylesheet" href="assets/css/color.css">
+
+<style>
+    /* CSS animation for fade-in effect */
+    .animated-element {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .animated-element.animated {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
 </head>
 <body>
 <div id="dtr-wrapper" class="clearfix">
@@ -34,8 +49,7 @@
     </div>
     <!-- preloader ends -->
 
-    <!-- Small Devices Header
-============================================= -->
+    <!-- Small Devices Header -->
     <div class="dtr-responsive-header header-with-slick-menu fixed-top dtr-responsive-dark-header">
         <div class="container">
 
@@ -48,12 +62,10 @@
         </div>
         <div class="dtr-responsive-header-menu"></div>
     </div>
-    <!-- Small Devices Header ends
-============================================= -->
-
-    <!-- header starts
-============================================= -->
+    
+    <!-- Header -->
     <header id="dtr-header-global" class="dtr-dark-header fixed-top">
+        <!-- Header content here -->
         <div class="d-flex align-items-center justify-content-between">
 
             <!-- header left starts -->
@@ -74,24 +86,24 @@
                 <ul class="sf-menu dtr-nav light-nav-on-load light-nav-on-scroll">
                     <li> <a class="nav-link" href="#home">Home</a> </li>
                     <li> <a class="nav-link" href="#about">About</a> </li>
-                    <li> <a class="nav-link" href="#services">Services</a> </li>
+                    <li> <a class="nav-link" href="services.html">Services</a> </li>
+                    <li> <a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li> <a class="nav-link" href="#contact">Contact</a> </li>
                 </ul>
             </div>
+            
             <!-- menu ends -->
 
         </div>
     </header>
-    <!-- header ends
-================================================== -->
 
-    <!-- == main content area starts == -->
+    <!-- Main Content -->
     <div id="dtr-main-content">
 
-        <!-- hero section starts
-================================================== -->
-        <section id="home" class="dtr-section dtr-section-with-bg dtr-hero-section-top-padding" style="background-image: url(assets/images/hero-img1.jpg);">
-
+        <!-- Hero Section with Animation -->
+        <section id="home" class="dtr-section dtr-section-with-bg dtr-hero-section-top-padding" style="background-image: url(assets/images/gallery/bg-image.png);">
+            <!-- Hero content here with animation -->
+            
             <!-- overlay -->
             <div class="dtr-overlay dtr-overlay-purple"></div>
             <div class="container dtr-overlay-content dtr-py-150">
@@ -99,51 +111,50 @@
                 <!--== row starts ==-->
                 <div class="row">
                     <div class="col-12 color-white">
-                        <h2 class="dtr-hero-subtext">Achieve Your</h2>
+                        <h2 class="text-size-xs dtr-hero-subtext">Achieve Your</h2>
                         <!-- typing text can be changed in custom.js -->
-                        <h1 class="dtr-hero-heading dtr-hero-typed">"<span id="typedhero" class="color-red"></span>"</h1>
-                        <p class="text-size-md font-weight-600">More than just a Marketing Agency</p>
-                        <p class="color-white w-50 w-sm-100">We are pioneers in the art of advertising and marketing, dedicated to transforming the marketing landscape in Bangladesh. Our mission extends beyond promoting our own products and services; we are here to empower our clients with comprehensive marketing solutions. </p>
-
+                        <h1 class="dtr-hero-heading dtr-hero-typed animated-element">"<span id="typedhero" class="color-red"></span>"</h1>
+                        <p class="text-size-lg font-weight-600 animated-element">More than just a Marketing Agency</p>
+                        <p class="color-white text-size-md w-50 w-sm-100 animated-element">We are pioneers in the art of advertising and marketing, dedicated to transforming the marketing landscape in Bangladesh. </p>
+                        <!-- <a href="#" class="dtr-btn dtr-btn-rounded btn-red dtr-mt-20 ">Our Services</a> -->
+                        <a href="#" class="dtr-btn dtr-btn-rounded btn-red-outline text-dark dtr-mt-20 animated-element">View Services</a> </div>
                 </div>
                 <!--== row ends ==-->
 
             </div>
         </section>
-        <!-- hero section ends
-================================================== -->
 
-        <!-- about section starts
-================================================== -->
+        <!-- About Section with Animation -->
         <section id="about" class="dtr-section dtr-section-center-bg dtr-pt-90 dtr-pb-100" style="background-image: url(assets/images/shape-1.svg);">
-            <!-- to change color of background shape no need to edit image - refer help document -->
-            <div class="container">
+            <!-- About content here with animation -->
+             <!-- to change color of background shape no need to edit image - refer help document -->
+             <div class="container">
 
                 <!--== row starts ==-->
                 <div class="row">
 
                     <!--== column 1 starts ==-->
-                    <div class="col-12 col-md-5"> <img src="assets/images/image-4.jpg" alt="image" class="dtr-rounded-img dtr-mb-80">
+                    <div class="col-12 col-md-5"> <img src="assets/images/image-4.jpg" alt="image" class="dtr-rounded-img dtr-mb-80 animated-element">
                         <!-- heading -->
-                        <p class="dtr-tagline color-red">Bespoke Campaigns</p>
-                        <h2 class="dtr-section-heading">Media Campaign</h2>
-                        <p>With the help of our computer specialists and their state-of-the-art dissection of the virality algorithm, we have come out with a marketing service that helps our clients achieve their media campaign goals. </p>
-                        <a href="#" class="dtr-btn dtr-btn-rounded btn-red-outline dtr-mt-20">View Services</a> </div>
+                        <p class="dtr-tagline color-red animated-element">Bespoke Campaigns</p>
+                        <a href="services.html" class="dtr-link"><h2 class="dtr-section-heading animated-element">Media Campaign</h2></a>
+                        <p class="text-size-md animated-element">We have come out with a marketing service that helps our clients achieve their media campaign goals. </p>
+                        <a href="#" class="dtr-btn dtr-btn-rounded btn-red-outline dtr-mt-20 animated-element">View Services</a> </div>
                     <!--== column 1 ends ==-->
 
                     <!--== column 2 starts ==-->
                     <div class="col-12 col-md-6 offset-md-1 dtr-pt-40 small-device-space">
-                        <p class="dtr-tagline color-red">Achieve Better Results</p>
-                        <h2 class="dtr-section-heading"> Virality Algoirthm</h2>
-                        <p>Our team of computer specialists have developed a deep understanding of how social media algorithms work. We use this knowledge to help our clients market and boost their products on social media platforms such as YouTube and Instagram. </p>
-                        <a href="#" class="dtr-btn dtr-btn-rounded btn-red-outline dtr-mt-20 dtr-mr-10"><i class="icon-phone-alt"></i>01770-214045</a>
+                        <p class="dtr-tagline color-red animated-element">Achieve Better Results</p>
+                        <a href="services.html" class="dtr-link"><h2 class="dtr-section-heading animated-element"> Virality Algoirthm</h2></a>
+                        <p class="text-size-md animated-element">Our team of computer specialists have developed a deep understanding of how social media algorithms work.</p>
+                        <a href="#" class="dtr-btn dtr-btn-rounded btn-red-outline dtr-mt-20 dtr-mr-10 animated-element"><i class="icon-phone-alt"></i>01770-214045</a>
 
                         <!-- nested row for offset column starts -->
                         <div class="row dtr-mt-100 dtr-mb-100">
                             <div class="col-12 col-lg-12">
 
                                 <!-- video box starts -->
-                                <div class="dtr-video-box dtr-rounded overflow-hidden">
+                                <div class="dtr-video-box dtr-rounded overflow-hidden animated-element">
     
                                     <!-- image -->
                                     <img src="assets/images/video-bg.jpg" alt="image">
@@ -162,64 +173,72 @@
 
             </div>
         </section>
-        <!-- about section ends
-================================================== -->
 
-        <!-- services section starts
-================================================== -->
+        <!-- Services Section with Animation -->
         <section id="services" class="dtr-section dtr-py-100 bg-pink">
+            <!-- Services content here with animation -->
             <div class="container">
 
                 <!-- heading -->
-                <p class="dtr-tagline text-center color-red">Digital Marketing Services</p>
-                <h2 class="dtr-section-heading text-center">Ways to reach your target audience online</h2>
+                <p class="dtr-tagline text-center color-red animated-element">Digital Marketing Services</p>
+                <h2 class="dtr-section-heading text-center animated-element">Ways to reach your target audience online</h2>
 
                 <!--== row starts ==-->
                 <div class="row dtr-mt-40 dtr-mx-0">
 
                     <!-- feature 1 starts -->
                     <div class="col-md-4 col-xl dtr-px-0">
-                        <div class="dtr-feature dtr-icon-feature dtr-feature-top dtr-box-feature">
+                        
+                        <div class="dtr-feature dtr-icon-feature dtr-feature-top dtr-box-feature animated-element">
+                            <a href="services.html"> 
                             <div class="dtr-feature-content">
-                                <h5>Virality Algorithm</h5>
-                                <p>We understand that social media algorithms are constantly changing, so we stay up-to-date on the latest trends. </p>
+                                <h5 class="text-size-lg">Virality Algorithm</h5>
+                                <p class="text-muted text-size-md">We understand that social media algorithms are constantly changing. </p>
                             </div>
+                            </a>
                         </div>
+                        
                     </div>
                     <!-- feature 1 ends -->
 
                     <!-- feature 2 starts -->
                     <div class="col-md-4 col-xl dtr-px-0">
-                        <div class="dtr-feature dtr-icon-feature dtr-feature-top dtr-box-feature">
+                        <a href="services.html"> 
+                        <div class="dtr-feature dtr-icon-feature dtr-feature-top dtr-box-feature animated-element">
                             <div class="dtr-feature-content">
-                                <h5>Media Campaign</h5>
-                                <p>We have come out with a marketing service that helps our clients achieve their media campaign goals. 
+                                <h5 class="text-size-lg">Media Campaign</h5>
+                                <p class="text-muted text-size-md">We have come out with a marketing service that helps our clients achieve their media campaign goals. 
                                 </p>
                             </div>
                         </div>
+                        </a>
                     </div>
                     <!-- feature 2 ends -->
 
                     <!-- feature 3 starts -->
                     <div class="col-md-4 col-xl dtr-px-0">
-                        <div class="dtr-feature dtr-icon-feature dtr-feature-top dtr-box-feature">
+                        <a href="services.html"> 
+                        <div class="dtr-feature dtr-icon-feature dtr-feature-top dtr-box-feature animated-element">
                             <div class="dtr-feature-content">
-                                <h5>Caption edit on<br>
+                                <h5 class="text-size-lg">Caption edit on<br>
                                     viral posts</h5>
-                                <p>The memes or posts which will get viral on any platform, we will offer edited captions for the companies that will collaborate with us, this will be a post-viral advertising scheme.</p>
+                                <p class="text-muted text-size-md">We will offer edited captions for the companies that will collaborate with us.</p>
                             </div>
                         </div>
+                        </a>
                     </div>
                     <!-- feature 3 ends -->
 
                     <!-- feature 4 starts -->
                     <div class="col-md-6 col-xl dtr-px-0">
-                        <div class="dtr-feature dtr-icon-feature dtr-feature-top dtr-box-feature">
-                            <div class="dtr-feature-content">
-                                <h5>Memetic Advertisement </h5>
-                                <p>Memes are highly shareable, which means that they can reach a large audience quickly and easily.</p>
+                        <a href="services.html">
+                            <div class="dtr-feature dtr-icon-feature dtr-feature-top dtr-box-feature animated-element">
+                                <div class="dtr-feature-content">
+                                    <h5 class="text-size-lg">Memetic Advertisement </h5>
+                                    <p class="text-muted text-size-md">Memes are highly shareable, they can reach a large audience quickly and easily.</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <!-- feature 4 ends -->
 
@@ -227,14 +246,12 @@
                 <!--== row ends ==-->
             </div>
         </section>
-        <!-- services section ends
-================================================== -->
 
-        <!-- section starts
-================================================== -->
+        <!-- Section with Animation -->
         <section class="dtr-section dtr-section-center-bg dtr-py-100" style="background-image: url(assets/images/shape-2.svg);">
-            <!-- to change color of background shape no need to edit image - refer help document -->
-            <div class="container">
+            <!-- Section content here with animation -->
+             <!-- to change color of background shape no need to edit image - refer help document -->
+             <div class="container">
 
                 <!--== row starts ==-->
                 <div class="row">
@@ -243,19 +260,12 @@
                     <div class="col-12 col-md-5">
 
                         <!-- heading -->
-                        <p class="dtr-tagline color-red">Build Online Presence</p>
-                        <h2 class="dtr-section-heading">Grow Your Business</h2>
-                        <p>
-                            Experience Exponential Growth with Our Results-Driven Marketing Agency!
-                            <br>
-                            <br>
+                        <p class="dtr-tagline color-red animated-element">Build Online Presence</p>
+                        <h2 class="dtr-section-heading animated-element">Grow Your Business</h2>
+                        <p class="text-size-md animated-element">
                             In a rapidly evolving business landscape, standing out and thriving is a constant challenge. That's where we come in. At Golden Fable, we're more than just marketers; we're your growth partners.
-                            <br>
-                            <br>
-                            Our team of experts is armed with the latest industry insights, cutting-edge strategies, and a relentless drive to propel your business to new heights. Whether you're a startup aiming to make a splash or an established brand seeking a fresh perspective, we tailor our solutions to fit your unique needs.
-
                         </p>
-                        <a href="#" class="dtr-btn dtr-btn-rounded btn-red-outline dtr-mt-20">Get Started</a>
+                        <a href="#" class="dtr-btn dtr-btn-rounded btn-red-outline dtr-mt-20 animated-element">Get Started</a>
 
 
                     </div>
@@ -269,7 +279,7 @@
                             <div class="col-12 col-lg-12 offset-lg-1">
 
                                 <!--=== image slider - 1col starts ===-->
-                                <div class="dtr-slick-slider overflow-hidden dtr-rounded-slider dtr-slick-has-arrows slick-corner-arrows dtr-slider-1col">
+                                <div class="dtr-slick-slider overflow-hidden dtr-rounded-slider dtr-slick-has-arrows slick-corner-arrows dtr-slider-1col animated-element">
                                     <!-- img 1 -->
                                     <div> <img src="assets/images/image-1.jpg" alt="image"> </div>
                                     <!-- img 2 -->
@@ -291,37 +301,36 @@
 
             </div>
         </section>
-        <!-- section ends
-================================================== -->
 
-    <!-- footer section starts
-================================================== -->
-    <footer id="dtr-footer">
-        <div class="container">
+        <!-- Footer Section -->
+        <footer id="dtr-footer">
+            <!-- Footer content here -->
+            <div class="container">
 
-            <!--== row starts ==-->
-            <div class="row d-flex align-items-center">
-
-                <!--== column 2 starts ==-->
-                <div class="col-12 col-md-6"> <a class="dtr-scroll-link" href="#home"><img src="assets/images/logo-light.png" alt="logo"></a> </div>
-                <!--== column 2 ends ==-->
-
-                <!--== column 3 starts ==-->
-                <div class="col-12 col-md-6">
-                    <ul class="dtr-list-copyright">
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
+                <!--== row starts ==-->
+                <div class="row d-flex align-items-center">
+    
+                    <!--== column 2 starts ==-->
+                    <div class="col-12 col-md-6"> <a class="dtr-scroll-link" href="#home"><img src="assets/images/logo-light.png" alt="logo"></a> </div>
+                    <!--== column 2 ends ==-->
+    
+                    <!--== column 3 starts ==-->
+                    <div class="col-12 col-md-6">
+                        <ul class="dtr-list-copyright">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!--== column 3 ends ==-->
+    
                 </div>
-                <!--== column 3 ends ==-->
-
+                <!--== row ends ==-->
+    
             </div>
-            <!--== row ends ==-->
+        </footer>
 
-        </div>
-    </footer>
-    <!-- footer section ends
-================================================== -->
+    </div>
+    <!-- #dtr-main-content ends -->
 
 </div>
 <!-- #dtr-wrapper ends -->
@@ -332,5 +341,38 @@
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/custom.js"></script>
+
+<script>
+$(document).ready(function() {
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to add "animated" class to elements in viewport
+    function addAnimationClass() {
+        $(".animated-element").each(function() {
+            if (isElementInViewport(this)) {
+                $(this).addClass("animated");
+            }
+        });
+    }
+
+    // Initial check on page load
+    addAnimationClass();
+
+    // Check on scroll
+    $(window).on("scroll", function() {
+        addAnimationClass();
+    });
+});
+</script>
+
 </body>
 </html>
