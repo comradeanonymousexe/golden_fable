@@ -706,3 +706,29 @@ form label.error { font-size: 0.665em; letter-spacing: 0.2px; }
 .dtr-btn, button, input[type="submit"], input[type="reset"], .dtr-form-btn, .dtr-logo, a:link, select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], #dtr-header-global, .dtr-social a, .dtr-icon-list li, .dtr-box-feature { -webkit-transition: all .3s ease; transition: all .3s ease }
 /*===== common shadow =====*/
 .dtr-box-feature:hover, .dtr-testimonial-content, .dtr-testimonial-content::before, .dtr-accordion .accordion-body, .dtr-accordion .accordion-button, .dtr-accordion .accordion-button:focus { box-shadow: 0 2.8px 0.3px -15px rgba(0, 0, 0, 0.5), 0 6.1px 1.5px -15px rgba(0, 0, 0, 0.383), 0 10px 4.1px -15px rgba(0, 0, 0, 0.311), 0 14.5px 8.7px -15px rgba(0, 0, 0, 0.246), 0 20.2px 17.4px -15px rgba(0, 0, 0, 0.18), 0 30px 50px -15px rgba(0, 0, 0, 0.11); }
+.dtr-link:hover h2 {
+    color: #e2434b;
+}
+.dtr-link h2 {
+    transition: color 200ms; /* Add the transition property to specify the animation duration */
+    color: initial; /* Set the initial text color */
+  }
+
+
+/* Add styles for the header with a purple background when scrolling */
+.purple-bg-header {
+    background-color: transparent; /* Start with a transparent background */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Add styles for the header with a purple background */
+.purple-bg-header.scrolled {
+    background-color: #800080 !important; /* Set the background color to purple when scrolled */
+}
+
+/* Add styles for the header */
+.dtr-dark-header {
+    height: 50px; /* Adjust the height to your preference */
+    background-color: #800080; /* Use your darker purple color here */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}

@@ -24,7 +24,7 @@ a:hover { color: #e2434b; }
 .dtr-overlay { background-color: rgba(0, 0, 0, .8); }
 .dtr-overlay-dark { background-color: rgba(45, 52, 54, .8); }
 .dtr-overlay-white { background-color: rgba(255, 255, 255, .8); }
-.dtr-overlay-purple { background-color: rgba(52, 34, 46, .8); }
+.dtr-overlay-purple { background-color: rgba(203,121,66, .7) }
 /*----------------------------------------*/
 /*----- Text -----*/
 /*----------------------------------------*/
