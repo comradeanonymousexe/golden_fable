@@ -732,3 +732,12 @@ form label.error { font-size: 0.665em; letter-spacing: 0.2px; }
     background-color: #800080; /* Use your darker purple color here */
     transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
+    /* CSS for eliminating vertical spacing between gallery items */
+    .gallery {
+        margin-bottom: 0; /* Remove margin-bottom */
+        padding-bottom: 15px; /* Add desired padding between gallery items */
+    }
+
+    .gallery:last-child {
+        padding-bottom: 0; /* Remove padding for the last gallery item */
+    }
