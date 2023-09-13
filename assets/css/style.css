@@ -18,6 +18,11 @@
 14 Elements
 15 Sliders
 16 Misc
+
+[Edited from here]
+17 Image frame
+
+
 */
 /*----------------------------------------*/
 /*----- 1 Generate Google Fonts  -----*/
@@ -741,3 +746,19 @@ form label.error { font-size: 0.665em; letter-spacing: 0.2px; }
     .gallery:last-child {
         padding-bottom: 0; /* Remove padding for the last gallery item */
     }
+
+
+
+
+/*  Edited from here   */
+.image-frame {
+    border: 5px solid red; /*#fee9d7; Adjust the border width as needed */
+    padding: 0px; /* Adjust the padding/margin inside the frame */
+    border-radius: 8px; /* Adjust the border radius as needed */
+  } 
+
+/*.bg-pink .image-frame {
+    border: 4px solid white;
+}*/
+
+/* */
