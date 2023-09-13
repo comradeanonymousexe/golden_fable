@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 	// hero text
 	var typedhero = new Typed('#typedhero', {
-		strings: ['Business Goals', 'Targeted Leads', 'Website Traffic'],
+		strings: ['Viral marketing', 'Memetic potential', 'Brand humor'],
 		typeSpeed: 30,
 		backSpeed: 50,
 		smartBackspace: true,
